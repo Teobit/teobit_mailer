@@ -1,3 +1,5 @@
+require 'sanitize'
+
 module TeobitMailer
   module MailerHelper
     def mailer_wrapper(&block)
