@@ -58,7 +58,7 @@ module TeobitMailer
     def value(v)
       raw <<-EOS
         <tr>
-        <td style="vertical-align: top; padding: 5px 0;">#{v}</td>
+        <td style="vertical-align: top; padding: 5px 0;">#{Sanitize.clean(v)}</td>
         </tr>
       EOS
     end
